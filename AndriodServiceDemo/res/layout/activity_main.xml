@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/startBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="28dp"
+        android:text="Start service" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startBtn"
+        android:layout_alignRight="@+id/startBtn"
+        android:layout_below="@+id/startBtn"
+        android:layout_marginTop="37dp"
+        android:text="Stop service" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/stopBtn"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stopBtn"
+        android:layout_below="@+id/stopBtn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="65dp"
+        android:text="Service Status:" />
+
+</RelativeLayout>
